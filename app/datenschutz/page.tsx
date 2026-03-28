@@ -3,8 +3,8 @@ import { Footer } from '@/components/footer'
 import { OperatorAddressCard } from '@/components/operator-address-card'
 
 export const metadata = {
-  title: 'Datenschutzerklärung – Apfelweinkultur.de',
-  description: 'Datenschutzerklärung und Informationen zur Verarbeitung personenbezogener Daten auf Apfelweinkultur.de.',
+  title: 'Datenschutzerklärung – Apfelweinkulturde.com',
+  description: 'Datenschutzerklärung und Informationen zur Verarbeitung personenbezogener Daten auf Apfelweinkultur.com.',
 }
 
 const sections = [

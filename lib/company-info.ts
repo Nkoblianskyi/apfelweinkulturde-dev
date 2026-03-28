@@ -4,5 +4,5 @@ export const SITE_OPERATOR = {
   addressLine1: 'Myrianthous Anna, Panagioti Kaspi 5Α',
   postalCity: '1095 Nicosia',
   locality: 'Circus',
-  email: 'kontakt@apfelweinkultur.de',
+  email: 'kontakt@apfelweinkulturde.com',
 } as const

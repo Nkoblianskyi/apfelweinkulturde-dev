@@ -4,9 +4,9 @@ import { Footer } from '@/components/footer'
 import { OperatorAddressCard } from '@/components/operator-address-card'
 
 export const metadata = {
-  title: 'Impressum – Apfelweinkultur.de',
+  title: 'Impressum – Apfelweinkulturde.com',
   description:
-    'Impressum und Anbieterkennzeichnung für Apfelweinkultur.de gemäß TMG und EU-Dienstleistungs-Informationspflichten.',
+    'Impressum und Anbieterkennzeichnung für Apfelweinkulturde.com gemäß TMG und EU-Dienstleistungs-Informationspflichten.',
 }
 
 export default function ImpressumPage() {

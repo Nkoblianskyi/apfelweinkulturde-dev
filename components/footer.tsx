@@ -79,7 +79,7 @@ export function Footer() {
 
         <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-xs font-sans tracking-wide text-[oklch(0.97_0.012_75/0.3)] text-center md:text-left space-y-1">
-            <p>© {new Date().getFullYear()} Apfelweinkultur.de — Alle Rechte vorbehalten</p>
+            <p>© {new Date().getFullYear()} Apfelweinkulturde.com — Alle Rechte vorbehalten</p>
             <p className="text-[oklch(0.97_0.012_75/0.45)]">
               Betrieb: {SITE_OPERATOR.legalName}
             </p>

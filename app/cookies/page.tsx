@@ -2,8 +2,8 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
 export const metadata = {
-  title: 'Cookie-Richtlinie – Apfelweinkultur.de',
-  description: 'Informationen über die Verwendung von Cookies auf Apfelweinkultur.de.',
+  title: 'Cookie-Richtlinie – Apfelweinkulturde.com',
+  description: 'Informationen über die Verwendung von Cookies auf Apfelweinkulturde.com.',
 }
 
 const sections = [
@@ -87,7 +87,7 @@ export default function CookiesPage() {
             {/* Intro */}
             <div className="border-l-2 border-accent/30 pl-6">
               <p className="text-muted-foreground text-base leading-relaxed font-sans">
-                Diese Cookie-Richtlinie erklärt, wie <strong className="text-foreground font-sans">Apfelweinkultur.de</strong> Cookies
+                Diese Cookie-Richtlinie erklärt, wie <strong className="text-foreground font-sans">Apfelweinkultur.com</strong> Cookies
                 und ähnliche Tracking-Technologien auf unserer Website verwendet. Bitte lesen Sie diese Richtlinie
                 sorgfältig durch, um zu verstehen, welche Cookies wir verwenden, warum wir sie einsetzen und wie
                 Sie Ihre Cookie-Präferenzen verwalten können.
