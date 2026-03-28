@@ -105,27 +105,30 @@ export default function CookiesPage() {
 
                 {section.list && section.title === 'Welche Cookies verwenden wir?' && (
                   <div className="flex flex-col gap-6 mt-2">
-                    {section.list.map((cookie) => (
-                      <div key={cookie.name} className="border border-border bg-card p-6">
-                        <div className="flex items-start justify-between gap-4 mb-4">
-                          <h3 className="font-serif text-lg text-foreground">{cookie.name}</h3>
-                          <span className="shrink-0 text-[9px] tracking-[0.3em] uppercase font-sans border border-accent/30 text-accent px-3 py-1">
-                            {cookie.typ}
-                          </span>
-                        </div>
-                        <p className="text-muted-foreground text-sm leading-relaxed font-sans mb-4">{cookie.desc}</p>
-                        <div className="grid sm:grid-cols-2 gap-4 border-t border-border pt-4">
-                          <div>
-                            <p className="text-[9px] tracking-[0.3em] uppercase text-accent/60 font-sans mb-1">Beispiel</p>
-                            <p className="text-xs font-sans text-foreground font-mono bg-muted px-2 py-1 inline-block">{cookie.beispiel}</p>
+                    {section.list.map((cookie) => {
+                      const c = cookie as { name: string; desc: string; beispiel: string; dauer: string; typ: string }
+                      return (
+                        <div key={c.name} className="border border-border bg-card p-6">
+                          <div className="flex items-start justify-between gap-4 mb-4">
+                            <h3 className="font-serif text-lg text-foreground">{c.name}</h3>
+                            <span className="shrink-0 text-[9px] tracking-[0.3em] uppercase font-sans border border-accent/30 text-accent px-3 py-1">
+                              {c.typ}
+                            </span>
                           </div>
-                          <div>
-                            <p className="text-[9px] tracking-[0.3em] uppercase text-accent/60 font-sans mb-1">Speicherdauer</p>
-                            <p className="text-sm font-sans text-foreground">{cookie.dauer}</p>
+                          <p className="text-muted-foreground text-sm leading-relaxed font-sans mb-4">{c.desc}</p>
+                          <div className="grid sm:grid-cols-2 gap-4 border-t border-border pt-4">
+                            <div>
+                              <p className="text-[9px] tracking-[0.3em] uppercase text-accent/60 font-sans mb-1">Beispiel</p>
+                              <p className="text-xs font-sans text-foreground font-mono bg-muted px-2 py-1 inline-block">{c.beispiel}</p>
+                            </div>
+                            <div>
+                              <p className="text-[9px] tracking-[0.3em] uppercase text-accent/60 font-sans mb-1">Speicherdauer</p>
+                              <p className="text-sm font-sans text-foreground">{c.dauer}</p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      )
+                    })}
                   </div>
                 )}
 
