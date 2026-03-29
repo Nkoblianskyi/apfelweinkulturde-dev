@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import { ALCOHOL_NOTICE_DE } from '@/lib/alcohol-notice'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { CookieBanner } from '@/components/cookie-banner'
@@ -101,6 +102,12 @@ export default function HomePage() {
                 >
                   Wie man trinkt
                 </Link>
+                <p
+                  className="w-full basis-full pt-2 text-[10px] sm:text-xs font-sans leading-relaxed text-[oklch(0.97_0.012_75/0.45)] max-w-xl"
+                  role="note"
+                >
+                  <span className="font-semibold text-[oklch(0.72_0.13_80/0.9)]">18+</span> — {ALCOHOL_NOTICE_DE}
+                </p>
               </div>
             </div>
           </div>

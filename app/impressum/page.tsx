@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { AlcoholNoticeCard } from '@/components/alcohol-notice'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { OperatorAddressCard } from '@/components/operator-address-card'
@@ -37,6 +38,8 @@ export default function ImpressumPage() {
 
         <section className="bg-background py-16 px-6 lg:px-10">
           <div className="max-w-4xl mx-auto flex flex-col gap-14">
+            <AlcoholNoticeCard className="bg-card border-border" />
+
             <div className="flex flex-col gap-5">
               <div className="flex items-baseline gap-4">
                 <span className="font-serif text-2xl text-accent/30 leading-none">01.</span>

@@ -1,3 +1,4 @@
+import { AlcoholNoticeCard } from '@/components/alcohol-notice'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { OperatorAddressCard } from '@/components/operator-address-card'
@@ -227,6 +228,8 @@ export default function DatenschutzPage() {
         {/* Content sections */}
         <section className="bg-background py-16 px-6 lg:px-10">
           <div className="max-w-4xl mx-auto flex flex-col gap-14">
+            <AlcoholNoticeCard className="bg-card border-border" />
+
             {sections.map((section, idx) => (
               <div key={section.id} id={section.id} className="flex flex-col gap-5">
                 <div className="flex items-baseline gap-4">

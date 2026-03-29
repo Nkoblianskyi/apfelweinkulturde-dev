@@ -1,3 +1,4 @@
+import { AlcoholNoticeCard } from '@/components/alcohol-notice'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 
@@ -93,6 +94,8 @@ export default function CookiesPage() {
                 Sie Ihre Cookie-Präferenzen verwalten können.
               </p>
             </div>
+
+            <AlcoholNoticeCard />
 
             {sections.map((section) => (
               <div key={section.title} className="flex flex-col gap-4">

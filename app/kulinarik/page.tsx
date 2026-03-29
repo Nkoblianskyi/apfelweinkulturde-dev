@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { AlcoholNoticeCard } from '@/components/alcohol-notice'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ArrowRight } from 'lucide-react'
@@ -74,12 +75,13 @@ export default function KulinarikPage() {
 
         {/* Intro */}
         <section className="bg-[oklch(0.18_0.025_55)] py-16 px-6">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-8">
             <p className="text-[oklch(0.97_0.012_75/0.7)] text-lg leading-relaxed font-sans">
               Apfelwein trinkt man nicht alleine — und schon gar nicht ohne Essen. Die hessische Küche
               ist ehrlich, herzhaft und direkt: Sie vertragt sich perfekt mit dem herb-sauren Charakter
               des Ebbelwoi. Hier sind die klassischen Begleiter.
             </p>
+            <AlcoholNoticeCard className="w-full max-w-xl text-left" />
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { AlcoholNoticeCard } from '@/components/alcohol-notice'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { ArrowRight } from 'lucide-react'
@@ -99,11 +100,12 @@ export default function TrinkenPage() {
 
         {/* Intro */}
         <section className="bg-[oklch(0.18_0.025_55)] py-16 px-6">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-8">
             <p className="text-[oklch(0.97_0.012_75/0.7)] text-lg leading-relaxed font-sans">
               Apfelwein trinken ist eine Kunst — und wie alle Künste hat sie ihre eigenen Regeln,
               Rituale und kleinen Geheimnisse. Wer sie kennt, trinkt besser. Wer sie lebt, trinkt hessisch.
             </p>
+            <AlcoholNoticeCard className="w-full max-w-xl text-left" />
           </div>
         </section>
 

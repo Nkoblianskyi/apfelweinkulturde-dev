@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { AlcoholNoticeFooter } from '@/components/alcohol-notice'
 import { SITE_OPERATOR } from '@/lib/company-info'
 
 const footerLinks = [
@@ -88,6 +89,8 @@ export function Footer() {
             Hessen &middot; Frankfurt &middot; Ebbelwoi
           </p>
         </div>
+
+        <AlcoholNoticeFooter />
       </div>
     </footer>
   )
